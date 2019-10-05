@@ -22,5 +22,5 @@ var_2015 = var_2015.rename({'Country': 'C', 'Region': 'R', 'Happiness Rank': 'Hr
                            axis=1)
 
 var_2015 = var_2015.corr()
-sns.heatmap(var_2015,square=False)
+sns.heatmap(var_2015,square=True)
 plt.show()
