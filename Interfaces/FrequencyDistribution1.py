@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\FrequencyDistribution1.ui'
+# Form implementation generated from reading ui file 'FrequencyDistribution1.ui'
 #
 # Created by: PyQt5 UI code generator 5.6
 #
@@ -8,7 +8,41 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+from Code.Visualisation import var_2015, var_2016, var_2017
+import pymsgbox
+
 class Ui_FD(object):
+    yr = [var_2015,var_2016,var_2017]
+    ft = ['EC','FA','HE','TR','FR','GN']
+    year=""
+    feat=""
+
+    def plothisto(self):
+        pymsgbox.alert(self.feat)
+
+    def select_yr(self,df):
+        if df == 0:
+            self.year = self.yr[0]
+        elif df == 1:
+            self.year = self.yr[1]
+        elif df == 2:
+            self.year = self.yr[2]
+
+
+    def select_ft(self,ft1):
+        if ft1 == 0:
+            self.feat = self.ft[0]
+        elif ft1 == 1:
+            self.feat = self.ft[1]
+        elif ft1 == 2:
+            self.feat = self.ft[2]
+        elif ft1 == 3:
+            self.feat = self.ft[3]
+        elif ft1 == 4:
+            self.feat = self.ft[4]
+        elif ft1 == 5:
+            self.feat = self.ft[5]
+
     def setupUi(self, FD):
         FD.setObjectName("FD")
         FD.resize(958, 463)
@@ -82,9 +116,34 @@ class Ui_FD(object):
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("../Images/frequency.jpg"))
         self.label.setObjectName("label")
+        self.go = QtWidgets.QPushButton(FD)
+        self.go.setGeometry(QtCore.QRect(720, 380, 131, 41))
+        self.go.setStyleSheet("background-color: rgb(84, 251, 205);\n"
+"font: 16pt \"MS Shell Dlg 2\";")
+        self.go.setObjectName("go")
         self.label.raise_()
         self.gridLayoutWidget.raise_()
+        self.go.raise_()
+######
 
+        self.go.clicked.connect(self.plothisto)
+
+        #####
+        self.Economy.clicked.connect(self.select_ft,0)
+        self.Family.clicked.connect(self.select_ft,1)
+        self.Health.clicked.connect(self.select_ft,2)
+        self.Trust.clicked.connect(self.select_ft,3)
+        self.Freedom.clicked.connect(self.select_ft,4)
+        self.Generosity.clicked.connect(self.select_ft,5)
+        ####
+
+        ####
+        self.y2015.clicked.connect(self.select_yr,0)
+        self.y2016.clicked.connect(self.select_yr,1)
+        self.y2017.clicked.connect(self.select_yr,2)
+        ####
+
+######
         self.retranslateUi(FD)
         QtCore.QMetaObject.connectSlotsByName(FD)
 
@@ -103,6 +162,7 @@ class Ui_FD(object):
         self.label_2.setText(_translate("FD", "<html><head/><body><p align=\"center\"><span style=\" font-size:36pt;\">Histogram</span></p></body></html>"))
         self.label_4.setText(_translate("FD", "<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600;\">Select the parameter</span></p></body></html>"))
         self.label_5.setText(_translate("FD", "<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600;\">Select the year</span></p></body></html>"))
+        self.go.setText(_translate("FD", "GO!"))
 
 
 if __name__ == "__main__":

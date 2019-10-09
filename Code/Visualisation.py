@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+
 desired_width = 320
 pd.set_option("display.width",desired_width)
 pd.set_option("display.max_columns",20)
@@ -78,7 +79,8 @@ desc_2017 = var_2017.describe()
 #     plt.ylabel("Mean Happiness Score")
 #     plt.title("Mean Happiness vs Year")
 #     plt.show()
-#
+#graph_meanhs()
+
 # def graph_maxmin():
 #     plt.rcParams['figure.figsize'] = [7, 7]
 #
@@ -107,7 +109,8 @@ desc_2017 = var_2017.describe()
 #     plt.title('Max/Min Happiness Scores Yearwise')
 #     plt.legend()
 #     plt.show()
-#
+#graph_maxmin()
+
 # def countryfn():
 #     f = input("Enter the name of the country : ")
 #
@@ -131,7 +134,8 @@ desc_2017 = var_2017.describe()
 #     plt.ylabel('Units')
 #     plt.legend()
 #     plt.show()
-#
+# countryfn()
+
 # def comparisionfn():
 #     import matplotlib.pyplot as plt
 #     f1 = input("Enter the 1st Country : ")
@@ -160,6 +164,7 @@ desc_2017 = var_2017.describe()
 #         axs.set(xlabel='Years', ylabel='Units')
 #         axs.legend()
 #     plt.show()
+# comparisionfn()
 
 # def scatterfn():
 #     import matplotlib.pyplot as plt
@@ -176,3 +181,94 @@ desc_2017 = var_2017.describe()
 #     plt.show()
 #
 # scatterfn()
+
+# def histofn():
+#     import matplotlib.pyplot as plt
+#     features = ['HS', 'EC', 'FA', 'HE', 'FR', 'TR', 'GN']
+#     x = int(input("Enter the variable : "))
+#     p = var_2015[features[x]]
+#     plt.rcParams['figure.figsize'] = [5, 5]
+#
+#     n, bins, patches = plt.hist(x=p, bins='auto', color='#0504aa',
+#                                 alpha=0.7, rwidth=0.85)
+#
+#     plt.grid(axis='y', alpha=0.75)
+#     plt.xlabel("%s" % features[x])
+#     plt.ylabel('No. of Countries')
+#     plt.title('Frequency Distribution over %s' % features[x])
+#     plt.show()
+# histofn()
+
+# def kdefn():
+#     import matplotlib.pyplot as plt
+#     features = ['HS', 'EC', 'FA', 'HE', 'FR', 'TR', 'GN']
+#     x = int(input("Enter the variable : "))
+#     p = var_2015[features[x]]
+#     import seaborn as sns
+#     sns.set_style('darkgrid')
+#     sns.distplot(p)
+#     plt.title("KDE over %s" % features[x])
+#     plt.show()
+#
+# kdefn()
+
+# def scatter3dfn():
+#     import plotly.express as px
+#     import plotly.offline as po
+#     import plotly.io as pio
+#
+#     var_2015 = pd.read_csv(r'D:\Projects\SDL_WHR\2015.csv', index_col="Country")
+#     var_2015 = pd.DataFrame(var_2015)
+#
+#     features = ['HS', 'EC', 'FA', 'HE', 'FR', 'TR', 'GN']
+#     x = int(input("Enter the first variable : "))
+#     y = int(input("Enter the second variable : "))
+#     z = int(input("Enter the third variable : "))
+#
+#     fig = px.scatter_3d(var_2015, x=features[x], y=features[y], z=features[z], color='HS', opacity=0.9)
+#     static_image_bytes = pio.to_image(fig, format='png')
+#     print(static_image_bytes)
+#     from IPython.display import Image
+#     Image(static_image_bytes)
+#     pio.write_image(fig, file='plotly_static_image.png', format='png')
+#
+# scatter3dfn()
+
+# def mapfn():
+#     import plotly as py
+#     import plotly.graph_objs as go
+#     from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+#     init_notebook_mode(connected=True)
+#     import plotly.io as pio
+#
+#     var_2017 = pd.read_csv(r'D:\Projects\SDL_WHR\2017.csv')
+#     var_2017 = pd.DataFrame(var_2017)
+#     var_2017 = var_2017.rename({'Country': 'C',
+#                                 'Happiness.Rank': 'HR',
+#                                 'Happiness.Score': 'HS',
+#                                 'Whisker.high': 'WH',
+#                                 'Whisker.low': 'WL',
+#                                 'Economy..GDP.per.Capita.': 'EC',
+#                                 'Family': 'FA',
+#                                 'Health..Life.Expectancy.': 'HE',
+#                                 'Freedom': 'FR',
+#                                 'Trust..Government.Corruption.': 'TR',
+#                                 'Generosity': 'GN',
+#                                 'Dystopia.Residual': 'DR'},
+#                                axis=1)
+#
+#     data = dict(type='choropleth',
+#                 locations=var_2017['C'],
+#                 locationmode='country names',
+#                 z=var_2017['HS'],
+#                 text=var_2017['C'],
+#                 colorbar={'title': 'Happiness'})
+#     layout = dict(title='Happiness Index 2017',
+#                   geo=dict(showframe=False,
+#                            projection={'type': 'mercator'}))
+#
+#     choromap3 = go.Figure(data=[data], layout=layout)
+#     py.offline.iplot(choromap3)
+#     pio.write_image(choromap3, file='MAP.png', format='png')
+#
+# mapfn()

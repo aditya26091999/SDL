@@ -176,8 +176,26 @@ color: rgb(255, 255, 255);</string>
     <pixmap>../Images/frequency.jpg</pixmap>
    </property>
   </widget>
+  <widget class="QPushButton" name="go">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>380</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(84, 251, 205);
+font: 16pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>GO!</string>
+   </property>
+  </widget>
   <zorder>label</zorder>
   <zorder>gridLayoutWidget</zorder>
+  <zorder>go</zorder>
  </widget>
  <resources/>
  <connections/>
