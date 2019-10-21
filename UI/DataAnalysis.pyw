@@ -9,6 +9,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 from UI.Histogram import Ui_Histogram
+from UI.LineChart import Ui_LineChart
+from UI.ScatterPlot import Ui_Relation
 
 
 class Ui_DataAnalysis(object):
@@ -19,9 +21,15 @@ class Ui_DataAnalysis(object):
         self.Histogram.show()
 
     def jump_Relations(self):
-        pass
+        self.Relation = QtWidgets.QMainWindow()
+        self.ui = Ui_Relation()
+        self.ui.setupUi(self.Relation)
+        self.Relation.show()
     def jump_Comparision(self):
-        pass
+        self.LineChart = QtWidgets.QMainWindow()
+        self.ui = Ui_LineChart()
+        self.ui.setupUi(self.LineChart)
+        self.LineChart.show()
     def jump_Next(self):
         pass
 
