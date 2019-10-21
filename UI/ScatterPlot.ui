@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Relation</class>
+ <widget class="QMainWindow" name="Relation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Relational Mapping</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(219, 205, 166);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>380</y>
+      <width>1201</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1920</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/regression.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>631</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 90pt &quot;Kokila&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Scatter Plots</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>1200</x>
+      <y>50</y>
+      <width>51</width>
+      <height>941</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1510</x>
+      <y>440</y>
+      <width>111</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 72pt &quot;Kokila&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;VS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>620</y>
+      <width>531</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QRadioButton" name="EC2">
+         <property name="toolTip">
+          <string>Economy</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Economy.JPG</normaloff>../Images/Economy.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="FA2">
+         <property name="toolTip">
+          <string>Family</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Family.JPG</normaloff>../Images/Family.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="HE2">
+         <property name="toolTip">
+          <string>Health</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Health.JPG</normaloff>../Images/Health.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QRadioButton" name="FR2">
+         <property name="toolTip">
+          <string>Freedom</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Freedom.JPG</normaloff>../Images/Freedom.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="TR2">
+         <property name="toolTip">
+          <string>Trust</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Trust.JPG</normaloff>../Images/Trust.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="GN2">
+         <property name="toolTip">
+          <string>Generosity</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Generosity.JPG</normaloff>../Images/Generosity.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="Plot">
+    <property name="geometry">
+     <rect>
+      <x>1560</x>
+      <y>950</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(50, 197, 17);
+font: 36pt &quot;Kokila&quot;;
+border-radius: 30px</string>
+    </property>
+    <property name="text">
+     <string>PLOT</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>260</y>
+      <width>651</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="y2015">
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>2015</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QRadioButton" name="y2016">
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>2016</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QRadioButton" name="y2017">
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>2017</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>50</y>
+      <width>531</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QRadioButton" name="EC">
+         <property name="toolTip">
+          <string>Economy</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Economy.JPG</normaloff>../Images/Economy.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="FA">
+         <property name="toolTip">
+          <string>Family</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Family.JPG</normaloff>../Images/Family.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="HE">
+         <property name="toolTip">
+          <string>Health</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Health.JPG</normaloff>../Images/Health.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QRadioButton" name="FR">
+         <property name="toolTip">
+          <string>Freedom</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Freedom.JPG</normaloff>../Images/Freedom.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="TR">
+         <property name="toolTip">
+          <string>Trust</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Trust.JPG</normaloff>../Images/Trust.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="GN">
+         <property name="toolTip">
+          <string>Generosity</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Images/Generosity.JPG</normaloff>../Images/Generosity.JPG</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>120</width>
+           <height>120</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
