@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8421183-fe52-418e-9240-3aeabf42c8de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UI/LineChart.pyw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/LineChart.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/ScatterPlot.pyw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI/ScatterPlot.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/AdvancedGraphs.pyw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/AdvancedGraphs.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/DataAnalysis.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/UI/DataAnalysis.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/LineChart.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/UI/LineChart.pyw" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +30,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -43,8 +45,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.WelcomePage.pyw">
-    <configuration name="DataFrames" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ML.pyw">
+    <configuration name="AdvancedGraphs.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SDL_WHR" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,7 +58,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/DataFrames.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/AdvancedGraphs.pyw" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ScatterPlot.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ML.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SDL_WHR" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,7 +100,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/ScatterPlot.pyw" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI/ML.pyw" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ML.pyw" />
         <item itemvalue="Python.WelcomePage.pyw" />
+        <item itemvalue="Python.AdvancedGraphs.pyw" />
         <item itemvalue="Python.LineChart.pyw" />
         <item itemvalue="Python.hello" />
-        <item itemvalue="Python.DataFrames" />
-        <item itemvalue="Python.ScatterPlot.pyw" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571688463165</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Line Chart comparision added">
+      <created>1571688680451</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571688680451</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

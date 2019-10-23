@@ -61,51 +61,56 @@ class Ui_LineChart(object):
             pymsgbox.alert('Loaded 2017 dataset', 'Success')
 
     def Plot1fn(self):
-
-        fig,axs = d.plt.subplots(1,1)
-        fig.canvas.set_window_title('%s'%self.Single.currentText())
-        c1 = d.var_2015.loc[self.Single.currentText()]
-        c2 = d.var_2016.loc[self.Single.currentText()]
-        c3 = d.var_2017.loc[self.Single.currentText()]
-
-        leg = ['Economy', 'Family', 'Health', 'Freedom', 'Trust', 'Generosity']
-
-        c1 = [c1['HR'], c1['EC'], c1['FA'], c1['HE'], c1['FR'], c1['TR'], c1['GN']]
-        c2 = [c2['HR'], c2['EC'], c2['FA'], c2['HE'], c2['FR'], c2['TR'], c2['GN']]
-        c3 = [c3['HR'], c3['EC'], c3['FA'], c3['HE'], c3['FR'], c3['TR'], c3['GN']]
-
-        for i in range(1, 6):
-            d.plt.plot(['2015', '2016', '2017'], [c1[i], c2[i], c3[i]], marker='o', label=leg[i])
-
-        d.plt.title('Country level analysis of : %s' % self.Single.currentText())
-        d.plt.xlabel('Year')
-        d.plt.ylabel('Units')
-        d.plt.legend()
-        d.plt.show()
-
-
-    def Plot2fn(self):
-        fig, axs = d.plt.subplots(1, 2,figsize = (10,10))
-        fig.canvas.set_window_title('%s vs %s'%(self.Double1.currentText(),self.Double2.currentText()))
-        f = [self.Double1.currentText(),self.Double2.currentText()]
-        for j in range(2):
-            c1 = d.var_2015.loc[f[j]]
-            c2 = d.var_2016.loc[f[j]]
-            c3 = d.var_2017.loc[f[j]]
+        try:
+            fig,axs = d.plt.subplots(1,1)
+            fig.canvas.set_window_title('%s'%self.Single.currentText())
+            c1 = d.var_2015.loc[self.Single.currentText()]
+            c2 = d.var_2016.loc[self.Single.currentText()]
+            c3 = d.var_2017.loc[self.Single.currentText()]
 
             leg = ['Economy', 'Family', 'Health', 'Freedom', 'Trust', 'Generosity']
 
             c1 = [c1['HR'], c1['EC'], c1['FA'], c1['HE'], c1['FR'], c1['TR'], c1['GN']]
             c2 = [c2['HR'], c2['EC'], c2['FA'], c2['HE'], c2['FR'], c2['TR'], c2['GN']]
             c3 = [c3['HR'], c3['EC'], c3['FA'], c3['HE'], c3['FR'], c3['TR'], c3['GN']]
-            for i in range(1, 6):
-                axs[j].plot(['2015', '2016', '2017'], [c1[i], c2[i], c3[i]], marker='o', label=leg[i])
-                axs[j].legend()
-            axs[j].set_title("%s" % f[j])
-        for axs in axs.flat:
-            axs.set(xlabel='Years', ylabel='Units')
 
-        fig.show()
+            for i in range(1, 6):
+                d.plt.plot(['2015', '2016', '2017'], [c1[i], c2[i], c3[i]], marker='o', label=leg[i])
+
+            d.plt.title('Country level analysis of : %s' % self.Single.currentText())
+            d.plt.xlabel('Year')
+            d.plt.ylabel('Units')
+            d.plt.legend()
+            d.plt.show()
+        except:
+            pymsgbox.alert('The Country is not present in all datasets')
+
+
+    def Plot2fn(self):
+        try:
+            fig, axs = d.plt.subplots(1, 2,figsize = (10,10))
+            fig.canvas.set_window_title('%s vs %s'%(self.Double1.currentText(),self.Double2.currentText()))
+            f = [self.Double1.currentText(),self.Double2.currentText()]
+            for j in range(2):
+                c1 = d.var_2015.loc[f[j]]
+                c2 = d.var_2016.loc[f[j]]
+                c3 = d.var_2017.loc[f[j]]
+
+                leg = ['Economy', 'Family', 'Health', 'Freedom', 'Trust', 'Generosity']
+
+                c1 = [c1['HR'], c1['EC'], c1['FA'], c1['HE'], c1['FR'], c1['TR'], c1['GN']]
+                c2 = [c2['HR'], c2['EC'], c2['FA'], c2['HE'], c2['FR'], c2['TR'], c2['GN']]
+                c3 = [c3['HR'], c3['EC'], c3['FA'], c3['HE'], c3['FR'], c3['TR'], c3['GN']]
+                for i in range(1, 6):
+                    axs[j].plot(['2015', '2016', '2017'], [c1[i], c2[i], c3[i]], marker='o', label=leg[i])
+                    axs[j].legend()
+                axs[j].set_title("%s" % f[j])
+            for axs in axs.flat:
+                axs.set(xlabel='Years', ylabel='Units')
+
+            fig.show()
+        except:
+            pymsgbox.alert('The Country is not present in all datasets')
 
     def setupUi(self, LineChart):
         LineChart.setObjectName("LineChart")

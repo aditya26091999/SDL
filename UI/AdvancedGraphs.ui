@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdvancedGraphs</class>
+ <widget class="QMainWindow" name="AdvancedGraphs">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Advanced Graphs</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>640</y>
+      <width>551</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/analytics-1925495_1920.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>720</y>
+      <width>311</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Images/3d.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>20</y>
+      <width>741</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 72pt &quot;Kokila&quot;;
+background-color: rgb(0, 176, 240);
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Complex Analysis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>172</x>
+      <y>196</y>
+      <width>691</width>
+      <height>93</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="maximumSize">
+        <size>
+         <width>495</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;Did Happiness&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Images/growth.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;Or&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Images/decreasing.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt;?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="Mean">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>310</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 176, 240);
+font: 75 22pt &quot;Kokila&quot;;
+border-radius : 30px
+</string>
+    </property>
+    <property name="text">
+     <string>CHECK!</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>103</x>
+      <y>410</y>
+      <width>791</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MaxMin">
+    <property name="geometry">
+     <rect>
+      <x>408</x>
+      <y>540</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 176, 240);
+font: 75 22pt &quot;Kokila&quot;;
+border-radius : 30px
+</string>
+    </property>
+    <property name="text">
+     <string>CHECK!</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>103</x>
+      <y>640</y>
+      <width>791</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ThreeD">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>933</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 176, 240);
+font: 75 22pt &quot;Kokila&quot;;
+border-radius : 30px
+</string>
+    </property>
+    <property name="text">
+     <string>CHECK!</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>216</x>
+      <y>440</y>
+      <width>590</width>
+      <height>93</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Images/rank.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="styleSheet">
+        <string notr="true">font: 36pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Winners and Losers?</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Images/iconfinder_trophy_1054950.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>700</y>
+      <width>311</width>
+      <height>95</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="styleSheet">
+        <string notr="true">font: 36pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;3D Check!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Images/3d (1).png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>196</y>
+      <width>484</width>
+      <height>95</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_18">
+       <property name="styleSheet">
+        <string notr="true">font: 36pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;The BIG PICTURE!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_19">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Images/worldwide.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="World">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>310</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 176, 240);
+font: 75 22pt &quot;Kokila&quot;;
+border-radius : 30px
+</string>
+    </property>
+    <property name="text">
+     <string>CHECK!</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>410</y>
+      <width>781</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>440</y>
+      <width>621</width>
+      <height>93</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QLabel" name="label_20">
+       <property name="styleSheet">
+        <string notr="true">font: 36pt &quot;Kokila&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PREDICT YOUR SCORE?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_21">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>91</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../Images/dice.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="Predict">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>540</y>
+      <width>171</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 176, 240);
+font: 75 22pt &quot;Kokila&quot;;
+border-radius : 30px
+</string>
+    </property>
+    <property name="text">
+     <string>CHECK!</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>640</y>
+      <width>781</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>631</x>
+      <y>834</y>
+      <width>641</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QComboBox" name="Triple1">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 0, 0,70%);
+font: 16pt &quot;Kokila&quot;;
+color: rgb(255,255,255);
+selection-background-color: rgb(0, 0, 0);
+border : 1px solid black</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Economy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Family</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Health</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Freedom</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trust</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Generosity</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="Triple2">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 145, 0);
+font: 16pt &quot;Kokila&quot;;
+color: rgb(255,255,255);
+selection-background-color: rgb(0, 0, 0);
+border : 1px solid black</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Economy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Family</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Health</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Freedom</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trust</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Generosity</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="Triple3">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(170, 0, 0,70%);
+font: 16pt &quot;Kokila&quot;;
+color: rgb(255,255,255);
+selection-background-color: rgb(0, 0, 0);
+border : 1px solid black</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Economy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Family</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Health</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Freedom</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trust</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Generosity</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

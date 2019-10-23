@@ -8,6 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+from UI.AdvancedGraphs import Ui_AdvancedGraphs
 from UI.Histogram import Ui_Histogram
 from UI.LineChart import Ui_LineChart
 from UI.ScatterPlot import Ui_Relation
@@ -31,7 +32,10 @@ class Ui_DataAnalysis(object):
         self.ui.setupUi(self.LineChart)
         self.LineChart.show()
     def jump_Next(self):
-        pass
+        self.AdvancedGraphs = QtWidgets.QMainWindow()
+        self.ui = Ui_AdvancedGraphs()
+        self.ui.setupUi(self.AdvancedGraphs)
+        self.AdvancedGraphs.show()
 
     def setupUi(self, DataAnalysis):
         DataAnalysis.setObjectName("DataAnalysis")
